@@ -1,9 +1,29 @@
 Language_Identification Project
 This project, commissioned by Euromonitor, aims to develop a robust data pipeline to enhance the accuracy of scraped multilingual data.
 
-The pipeline uses a funnel-down approach, where each stage incrementally refines the dataset, ultimately isolating a small subset of uncertain cases for which no automatic language label is assigned. This minimizes false assumptions and ensures high confidence in labeled data.
+### **Key Findings**
 
-The methodology combines:
+**The new method significantly improved accuracy:**
+
+- **Lithuania**: from **81.4%** to **96%**  
+- **Canada**: from **92.8%** to **98%**
+
+**Most errors occurred in short texts**, especially **titles with international words**.
+
+**Two country types identified for effective use:**
+- **Monolingual**: one dominant language with minor international mix  
+- **Multilingual**: no clear dominant language
+
+**The method works fully automatically in 57.5% of cases** (~**193.8k** entries).
+
+**42.5%** (~**143k** entries) **remain unresolved**, requiring **minimal human review at one stage** or **further analysis** in multilingual contexts.
+
+**The pipeline uses a funnel-down approach**, where each stage incrementally refines the dataset, ultimately isolating a small subset of uncertain cases for which no automatic language label is assigned. **This minimizes false assumptions and ensures high confidence in labeled data.**
+
+
+
+
+### **The methodology combines:**
 
 Classic statistical techniques
 
