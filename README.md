@@ -1,11 +1,13 @@
-Language_Identification Project
-This project, commissioned by Euromonitor, aims to develop a robust data pipeline to enhance the accuracy of scraped multilingual data.
+# Language_Identification Project
 
-### **Key Findings**
+This project, commissioned by **Euromonitor**, aims to develop a robust data pipeline to enhance the accuracy of scraped **multilingual data**.
+
+---
+
+### 🔍 **Key Findings**
 
 **The new method significantly improved accuracy:**
-
-- **Lithuania**: from **81.4%** to **96%**  
+- **Lithuania**: from **81.4%** to **96%**
 - **Canada**: from **92.8%** to **98%**
 
 **Most errors occurred in short texts**, especially **titles with international words**.
@@ -14,24 +16,37 @@ This project, commissioned by Euromonitor, aims to develop a robust data pipelin
 - **Monolingual**: one dominant language with minor international mix  
 - **Multilingual**: no clear dominant language
 
-**The method works fully automatically in 57.5% of cases** (~**193.8k** entries).
+**The method works fully automatically in 57.5% of cases** (~**193.8k** entries).  
+**42.5%** (~**143k** entries) **remain unresolved**, requiring **minimal human review** or **further analysis**, especially in multilingual contexts.
 
-**42.5%** (~**143k** entries) **remain unresolved**, requiring **minimal human review at one stage** or **further analysis** in multilingual contexts.
+**The pipeline uses a funnel-down approach**, where each stage incrementally refines the dataset, ultimately isolating a small subset of uncertain cases for which no automatic language label is assigned.  
+This approach **minimizes false assumptions** and ensures **high confidence in labeled data**.
 
-**The pipeline uses a funnel-down approach**, where each stage incrementally refines the dataset, ultimately isolating a small subset of uncertain cases for which no automatic language label is assigned. **This minimizes false assumptions and ensures high confidence in labeled data.**
+---
 
+### ⚙️ **Methodology**
 
+The proposed solution combines:
+- ✅ **Classic statistical techniques**
+- 🤖 **Modern machine learning models**
+- 🧠 **Rule-based logic**
 
+All methods are **scientifically grounded**, and detailed explanations can be found in the accompanying report.  
+See the **PDF**, section **"Tiriamoji dalis – Siūlomas metodas"**, **page 22** for the full technical breakdown.
 
-### **The methodology combines:**
+---
 
-Classic statistical techniques
+### 📂 **Running the Notebooks**
 
-Modern machine learning models
+To run the included notebooks:
+- Please reach out to receive example data.  
+- Run each cell **step by step** – the pipeline expects specific data structures.  
+- A full data wrangling guide will be added soon, so you can adapt the pipeline to your own datasets.  
+- Note: due to confidentiality, **shared data will be fictional**, and results will differ from production.
 
-Rule-based logic
+We welcome your feedback! Feel free to suggest improvements or share ways to boost accuracy in the initial run.
 
-All methods applied were scientifically researched, and their theoretical justification can be found in the accompanying report. For full technical details of the proposed pipeline, refer to the PDF, section "Tiriamoji dalis – Siūlomas metodas" on page 22.
+---
 
+📬 **Contact** us if you'd like to test this pipeline on your own data.
 
-To get data to run the added notebooks, don't hesitate to reach out. Run each cell block one by one, it requires specific data structures that were present and a more in depth data wrangling approach will be soon added so you run this with your own data. As the data is confidential you will not get the same results as the data shared will be fictional. Feel free to improve the accuracy of the first run you get and let us know how to improve it further! 
